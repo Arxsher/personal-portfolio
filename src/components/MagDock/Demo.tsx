@@ -1,4 +1,3 @@
-import React from 'react';
 import MagDock from './MagDock';
 
 const Demo = () => {

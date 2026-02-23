@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from 'framer-motion';
 
 const springConfig = { stiffness: 150, damping: 20 };
@@ -72,7 +72,7 @@ const MagDock = () => {
 const DockIcon = ({ mouseX }: { mouseX: any }) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const distance = useTransform(mouseX, (val) => {
+  const distance = useTransform(mouseX, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - (bounds.x + bounds.width / 2);
   });

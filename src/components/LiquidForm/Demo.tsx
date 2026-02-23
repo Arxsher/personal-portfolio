@@ -1,4 +1,3 @@
-import React from 'react';
 import LiquidForm from './LiquidForm';
 
 const Demo = () => {

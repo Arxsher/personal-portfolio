@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const springTransition = {
   type: 'spring',
   stiffness: 300,
   damping: 30,
-};
+} as any;
 
 const MorphPlayer = () => {
   const [isExpanded, setIsExpanded] = useState(false);
